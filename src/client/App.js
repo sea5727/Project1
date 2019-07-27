@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import './app.css';
+import {  BrowserRouter as Router, Route } from "react-router-dom";
  
- 
+import { App , Home, Login, Register } from './containers';
+
 class MyComponent extends Component {
-    state = {
-      hi:"hello!"
-    }
+
     render() {
-        return(
-            <div>
-              <h1>{this.state.hi}</h1>
-            </div>
-        );
+        return (
+        <App/>
+        )
+      
     }
 }
  

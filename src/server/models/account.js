@@ -19,4 +19,4 @@ Account.methods.vallidateHash = function(password){
     return bcrypt.compareSync(password, this.password);
 }
 
-module.exports = mongoose.model('account', Account);
+module.exports = mogoose.model('account', Account);
