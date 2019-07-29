@@ -1,3 +1,4 @@
-import Header from './Header';
+import Logo from './Logo';
+import Login from './Login';
 
-export {Header};
+export {Logo, Login};

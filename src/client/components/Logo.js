@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom'
 
 // import jQuery from "jquery";
 // window.$ = window.jQuery = jQuery;
@@ -15,12 +16,12 @@ class Logo extends Component{
                    </ul>
                    <nav>
                        <div class="nav-wrapper">
-                           <a href="#!" class="brand-logo center">Logo</a>
+                           <Link to="/" class="brand-logo center">Logo</Link>
                            <ul class="left">
                             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
                             </ul>
                            <ul class="right hide-on-med-and-down">
-                               <li><a href="sass.html">Login</a></li>
+                               <li><Link to="Login">Login</Link></li>
                                <li><a href="badges.html">Sign</a></li>
                            </ul>
                        </div>

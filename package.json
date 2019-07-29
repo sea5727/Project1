@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "nodemon --exec babel-node src/server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "debug" : "webpack-dev-server --insepct-brk --mode development --devtool inline-source-map --hot"
   },
   "dependencies": {
     "axios": "^0.19.0",

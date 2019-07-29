@@ -30,14 +30,16 @@ module.exports = {
     ]
   },
   devServer: {
+    host: "0.0.0.0",
     port: 4000,
     open: true,
     disableHostCheck : true,
-    host: "0.0.0.0",
+    historyApiFallBack: true,
+    
     proxy: {
-      '/api/Login*': {
-        target : "http://192.168.0.15:8080/api/Login",
-        pathRewrite : {"^/api" : ""},
+      'api/**': {
+        target : "http://192.168.0.15:8080",
+        changeOrigin: true,
       }
     }
   },

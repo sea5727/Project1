@@ -5,11 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "node",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://192.168.0.15:4000",
-            "webRoot": "${workspaceFolder}"
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+            "args" : [
+                "--mode",
+                "development",
+                "--devtool",
+                "inline-source-map",
+                "--hot"
+
+            ]
+            // "debug" : "webpack-dev-server --insepct-brk --mode development --devtool inline-source-map --hot"
         }
     ]
 }

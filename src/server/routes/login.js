@@ -59,7 +59,7 @@ router.post('/signup', (req, res) => {
     res.json({ success: true });
 })
 
-router.post('/signin', (req, res) => {
+router.post('/login', (req, res) => {
     console.log('signin');
     /* to be implemented */
     res.json({ success: true });
