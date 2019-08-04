@@ -35,9 +35,8 @@ module.exports = {
     disableHostCheck : true,
     host: "0.0.0.0",
     proxy: {
-      '/api/Login*': {
-        target : "http://192.168.0.15:8080/api/Login",
-        pathRewrite : {"^/api" : ""},
+      '/api': {
+        target : "http://192.168.0.15:8080",
       }
     }
   },

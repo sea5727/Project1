@@ -9,14 +9,15 @@ const api = require('./routes');
 const app = express();
 
  
-app.use(morgan({ format: 'dev', stream : fs.createWriteStream('app.log', {'flags' : 'w'})} ));
+
+app.use(morgan({ format: 'dev', stream : fs.createWriteStream('./app.log', {'flags' : 'a'})} ));
 app.use(express.static("dist"));
 app.use(bodyParser.json()); 
 
-app.get("/api/getUsername", (req, res) => {
-  console.log('getUSername')
-  res.send("Hi! hello")
-});
+// app.get("/api/getUsername", (req, res) => {
+//   console.log('getUSername')
+//   res.send("Hi! hello")
+// });
 
 app.use('/api', api);
 app.get("*", (req, res) => {

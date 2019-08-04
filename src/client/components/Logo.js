@@ -8,21 +8,21 @@ class Logo extends Component{
 
            return (
             <div>
-                   <ul id="dropdown1" class="dropdown-content">
+                   <ul id="dropdown1" className="dropdown-content">
                        <li><a href="#!">one</a></li>
                        <li><a href="#!">two</a></li>
-                       <li class="divider"></li>
+                       <li className="divider"></li>
                        <li><a href="#!">three</a></li>
                    </ul>
                    <nav>
-                       <div class="nav-wrapper">
-                           <Link to="/" class="brand-logo center">Logo</Link>
-                           <ul class="left">
-                            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+                       <div className="nav-wrapper">
+                           <Link to="/" className="brand-logo center">Logo</Link>
+                           <ul className="left">
+                            <li><a className="dropdown-button" href="#!" data-activates="dropdown1">Menu<i className="material-icons right">arrow_drop_down</i></a></li>
                             </ul>
-                           <ul class="right hide-on-med-and-down">
+                           <ul className="right hide-on-med-and-down">
                                <li><Link to="Login">Login</Link></li>
-                               <li><a href="badges.html">Sign</a></li>
+                               <li><Link to="Register">Sign</Link></li>
                            </ul>
                        </div>
                    </nav>
