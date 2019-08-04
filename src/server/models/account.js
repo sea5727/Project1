@@ -13,9 +13,6 @@ const Account = new Schema({
     }
 });
 
-exports.generateHash = (password) => {
-    return bcrypt.hashSync(password, 8)
-}
 
 exports.Account = mogoose.model('account', Account);
 
